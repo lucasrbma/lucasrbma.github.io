@@ -1,0 +1,60 @@
+@keyframes rainbow {
+    0%, 100% {
+        color: #546beb;
+    }
+    50% {
+        color: #eb6c7b;
+    }
+}
+
+@keyframes appear-down {
+   from {
+    transform: translateY(-4rem);
+    opacity: 0;
+   } to {
+    transform: translateY(0);
+    opacity: 1;
+   }    
+}
+
+/* scroll animation */
+
+[data-animation] {
+    opacity: 0;
+
+    transition: 400ms;
+}
+
+[data-animation="down"] {
+    transform: translate3d(0, -4rem, 0);
+}
+
+[data-animation="up"] {
+    transform: translate3d(0, 8rem, 0);
+}
+
+[data-animation].animate {
+    opacity: 1;
+
+    transform: translate3d(0, 0, 0);
+}
+
+[data-animation="right"] {
+    transform: translate3d(-2rem, 0, 0);
+}
+
+[data-animation="left"] {
+    transform: translate3d(2rem, 0, 0);
+}
+
+@media (min-width: 768px) {    
+    [data-animation="right"] {
+        transform: translate3d(-4rem, 0, 0);
+    }
+    
+    [data-animation="left"] {
+        transform: translate3d(4rem, 0, 0);
+    }
+}
+
+/* scroll animation */

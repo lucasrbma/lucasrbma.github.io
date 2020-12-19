@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Rangel</title>
+
+    <link rel="icon" href="./images/icon.svg">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section class="home">
+            <h1>Hello world,
+                <br>
+                I'm Lucas Rangel
+            </h1>
+
+            <p>I’m a Computer Science student,
+                in love with design and progamming.
+            </p>
+
+            <p>Scroll to see more <img src="./images/arrow.svg" alt=""></p>
+        </section>
+
+        <section class="about">
+            <h2 data-animation="down">About me</h2>
+
+            <p data-animation="down">
+                What's up! I’m a Computer Science student 
+                at Universidade Paulista, based  in São Paulo, Brasil. 
+                I love design and programming, so I’m learning to become
+                a full-stack developer. <br>
+                Also, I’m currently looking for an Internship experience.
+            </p>
+            
+            <section>
+                <figure data-animation="right">
+                    <img src="./images/profile.jpg" alt="Lucas Rangel">
+                </figure>
+
+                <p id="skills" data-animation="left">
+                    let skills = [ <br>
+                        “Javascript”, <br>
+                        “HTML5”, <br>
+                        “CSS3”, <br>
+                        “UI/UX”, <br>
+                        “Git/Github” <br>
+                        ];
+                </p>
+            </section>
+        </section>
+
+        <section class="social">
+            <h2 data-animation="down">Social</h2>
+
+            <section data-animation="down">
+                <a target="_blank" href="https://github.com/lucasrbma">GitHub</a>
+                <a target="_blank" href="https://www.linkedin.com/in/lucasrbma">LinkedIn</a>
+                <a target="_blank" href="mailto:lucasrbma@icloud.com">Email</a>
+            </section>
+        </section>
+
+        <section class="projects">
+            <h2 data-animation="down">Projects</h2>
+
+            <section class="project" data-animation="up">
+                <div class="card">
+                    <div class="print">
+                        <img src="./images/happy.jpg" alt="Happy App">
+                    </div>
+    
+                    <h3>Happy</h3>
+                    <p>
+                        Happy was a project for educational purposes made available by Rocketseat - a technology school, 
+                        where I received practical instructions to carry out this project. 
+                        In this project I learned <strong>good practices</strong> with code, 
+                        improved my knowledge with <strong>CSS3</strong> and <strong>Javascript</strong> 
+                        and had a brief contact with <strong>Node.js</strong>.
+                    </p>
+    
+                </div>
+    
+                <div class="links">
+                    <a class="demonot">Demo unavailable</a>
+    
+                    <a target="_blank" href="https://github.com/lucasrbma/nlw">Visit on GitHub</a>
+                </div>
+            </section>
+
+            <section class="project" data-animation="up">
+                <div class="card">
+                    <div class="print">
+                        <img src="./images/weather.jpg" alt="Weather App">
+                    </div>
+    
+                    <h3>Weather</h3>
+                    <p>
+                        Weather is a project made entirely by me using <strong>Javascript</strong>, <strong>HTML5</strong> and <strong>CSS3</strong>. 
+                        In this project it's possible to access weather information about the 
+                        informed city in the app. Here, I learned and made use of an external <strong>API</strong>
+                        for the first time in a project using <strong>Javascript</strong>.
+                    </p>
+    
+                </div>
+    
+                <div class="links">
+                    <a target="_blank" class="demo" href="https://lucasrbma.github.io/weather-app">View demo</a>
+    
+                    <a target="_blank" href="https://github.com/lucasrbma/weather-app">Visit on GitHub</a>
+                </div>
+            </section>
+
+            <section class="project" data-animation="up">
+                <div class="card">
+                    <div class="print">
+                        <img src="./images/todo.jpg" alt="Todo list App">
+                    </div>
+    
+                    <h3>Todo</h3>
+                    <p>
+                        Todo was my first project as a <strong>Javascript developer</strong>, 
+                        here I tried to learn and understand how to manipulate the <strong>HTML DOM</strong> 
+                        using <strong>Javascript</strong>, as well as learned the behavior 
+                        and structure of the <strong>HTML</strong> itself.
+                    </p>
+    
+                </div>
+    
+                <div class="links">
+                    <a target="_blank" class="demo" href="https://lucasrbma.github.io/todo-app">View demo</a>
+    
+                    <a target="_blank" href="https://github.com/lucasrbma/todo-app">Visit on GitHub</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed and Developed<br>
+            by Lucas Rangel
+        </p>
+    </footer>
+
+    <script src="./script/animation.js"></script>
+</body>
+</html>

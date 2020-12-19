@@ -1,0 +1,486 @@
+/* general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0 2.5rem;
+
+    background-color: #000;
+
+    font: 500 1.4rem 'Poppins', sans-serif;
+    color: #7f7f7f;
+
+    overflow-x: hidden;
+}
+
+::selection {
+    color: #eaeaea;
+    background-color: #7f7f7f
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3.6rem;
+
+    line-height: 3.6rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.16rem;
+
+    margin-bottom: 4rem;
+
+    color: white;
+}
+
+a {
+    max-height: 3rem;
+    border-radius: 0.6rem;
+    color: #000;
+    background-color: #fff;
+
+    font: 600 1.4rem 'Fira Code', sans-serif;
+
+    text-decoration: none;
+
+    transition: background-color 200ms, color 200ms, border 50ms;
+}
+
+a:hover {
+    border: 0.2rem solid #fff;
+    
+    color: #fff;
+    background-color: transparent;
+}
+
+/* general */
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1a1a;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* scrollbar */
+
+/* home */
+
+.home {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    text-align: center;
+}
+
+.home h1 {
+    margin-bottom: 3.5rem;
+
+    animation: rainbow 10s infinite, appear-down 800ms 150ms backwards;
+}
+
+.home h1 + p {
+    width: 30rem;
+
+    margin-bottom: 35vh;
+
+    animation: appear-down 800ms 300ms backwards;
+}
+
+.home p + p {
+    margin-bottom: 5rem;
+
+    animation: appear-down 800ms 800ms backwards;
+}
+
+/* home */
+
+/* about */
+
+.about {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.about h2 + p {
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.about section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about figure {
+    width: 15rem;
+    height: 15rem;
+    
+    background-color: #c4c4c4;
+
+    margin-right: 2rem;
+}
+
+.about figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.about #skills {
+    font: 500 1.4rem 'Fira Code', sans-serif;
+
+    color: #eb6c7b;
+}
+
+/* about */
+
+/* social */
+
+.social {
+    margin-bottom: 18rem;
+}
+
+.social section, .social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.social a {
+    width: 9rem;
+    height: 3rem;
+}
+
+.social a + a {
+    margin-left: 1.5rem;
+}
+
+/* social */
+
+/* projects */
+
+.projects h2 {
+    margin-bottom: 6rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 90rem;
+
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+    padding: 0 1rem 2rem;
+    border-radius: 1rem;
+
+    background-color: #1a1a1a;
+}
+
+.card h3 {
+    margin-top: 16rem;
+    margin-bottom: 0.5rem;
+    
+    font-weight: 500;
+    color: #fff;
+}
+
+.print {
+    width: 30rem;
+    height: 17rem;
+
+    position: absolute;
+    top: -2rem;
+
+    overflow: hidden;
+
+    border-radius: 0.8rem;
+
+    background-color: #c4c4c4;
+}
+
+.print img {
+    width: 100%;
+}
+
+.links {
+    max-width: 40rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+
+    margin-bottom: 6rem;
+}
+
+.demonot {
+    color: #b1b1b1;
+    background-color: #666;
+}
+
+.demonot:hover {
+    border: none;
+
+    color: #b1b1b1;
+    background-color: #666;
+}
+
+.demo {
+    font-weight: 500;
+
+    color: #fff;
+    background-color: #546beb;
+}
+
+.demo:hover {
+    border: 0.2rem solid #546beb;
+
+    color: #546beb;
+    background-color: transparent;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.7rem 1rem;
+}
+
+.projects:last-child {
+    margin-bottom: 3rem;
+}
+
+/* projects */
+
+/* footer */
+
+footer p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 3.5rem;
+}
+
+/* footer */
+
+/* media queries */
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    a {
+        font-size: 1.2rem;
+    }
+
+    .demonot {
+        font-size: 1.1rem;
+    }
+
+    .print {
+        width: 26rem;
+        height: 14.8rem;
+    }
+
+    .card h3 {
+        margin-top: 13.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    /* general */
+
+    body {
+        padding: 0;
+
+        font-size: 1.8rem;
+    }
+
+    h1 {
+        font-size: 9.6rem;
+    
+        line-height: 9.6rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+
+        letter-spacing: 0.24rem;
+    }
+
+    a {
+        width: 19.2rem;
+        max-width: 19.2rem;
+        max-height: 3.6rem;
+
+        font-size: 1.8rem;
+    }
+
+    /* general */
+
+    /* home */
+
+    .home h1 {
+        margin-bottom: 6rem;
+    }
+
+    .home h1 + p {
+        width: 57rem;
+
+        font-size: 2.4rem;
+    
+        margin-bottom: 25vh;
+    }
+
+    /* home */
+
+    /* about */
+
+    .about {
+        margin-top: 13rem;
+        margin-bottom: 10rem;
+    }
+
+    .about h2 + p {    
+        margin: 0 auto 4rem;
+
+        width: 63rem;
+    }
+
+    .about figure {
+        width: 20rem;
+        height: 20rem;
+
+        margin-right: 4rem;
+    }
+
+    .about #skills {
+        font-size: 1.8rem;
+    }
+
+    /* about */
+
+    /* social */
+
+    .social a {
+        width: 10.8rem;
+        height: 3.6rem;
+    }
+
+    .social a + a {
+        margin-left: 3rem;
+    }
+
+    /* social */
+
+    /* projects */
+    
+    .projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        margin: 0 auto;
+        
+        max-width: 100rem;
+    }
+
+    .project {
+        margin: 0 1rem 0 3rem;
+    }
+
+    .card {
+        height: 17.1rem;
+
+        align-items: flex-start;
+
+        padding: 0;
+
+        text-align: start;
+    }
+
+    .print {
+        left: -2rem;
+    }
+
+    .card h3, .card p {
+        margin-left: 30rem;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .card p {
+        font-size: 1.4rem;
+
+        margin-right: 2rem;
+    }
+
+    .links {
+        align-self: flex-end;
+    }
+
+    .demonot {
+        font-size: 1.6rem;
+    }
+
+    .projects:last-child {
+        margin-bottom: 10rem;
+    }
+
+    /* projects */
+
+    /* footer */
+
+    footer p {
+        font-size: 1.4rem;
+    }
+
+    /* footer */
+}
+
+/* media queries */
