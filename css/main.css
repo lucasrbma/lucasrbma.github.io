@@ -107,13 +107,13 @@ a:hover {
 .home h1 + p {
     width: 30rem;
 
-    margin-bottom: 35vh;
+    margin-bottom: 30vh;
 
     animation: appear-down 800ms 300ms backwards;
 }
 
 .home p + p {
-    margin-bottom: 5rem;
+    margin-bottom: 12rem;
 
     animation: appear-down 800ms 800ms backwards;
 }
